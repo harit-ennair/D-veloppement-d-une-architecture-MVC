@@ -1,0 +1,16 @@
+{
+    "name": "youcode/m.v.c",
+    "autoload": {
+        "psr-4": {
+            "Youcode\\MVC\\": "src/",
+            "database\\": "database/database.php"
+        }
+    },
+    "authors": [
+        {
+            "name": "Oussama Errahili",
+            "email": "oussamaerrahili124@gmail.com"
+        }
+    ],
+    "require": {}
+}
