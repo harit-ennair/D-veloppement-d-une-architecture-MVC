@@ -2,7 +2,8 @@
     "name": "youcode/d-veloppement-d-une-architecture-mvc",
     "autoload": {
         "psr-4": {
-            "Youcode\\DVeloppementDUneArchitectureMvc\\": "src/"
+            "App\\":"App/",
+            "Database\\":"Database/"
         }
     },
     "authors": [

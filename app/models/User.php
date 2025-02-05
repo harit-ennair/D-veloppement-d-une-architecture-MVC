@@ -1,6 +1,6 @@
 <?php 
-
-abstract class user {
+namespace App\Models;
+abstract class User {
 
     protected $id;
     protected $username;
@@ -14,5 +14,4 @@ abstract class user {
         $this->email=$email;
         $this->password=$password;
     }
-    abstract public function register($name ,$email ,$password);
 }
