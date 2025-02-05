@@ -1,9 +1,10 @@
 {
-    "name": "youcode/m.v.c",
+    "name": "youcode/d-veloppement-d-une-architecture-mvc",
     "autoload": {
         "psr-4": {
-            "Youcode\\MVC\\": "src/",
-            "database\\": "database/database.php"
+            "App\\": "App/"
+            
+            
         }
     },
     "authors": [

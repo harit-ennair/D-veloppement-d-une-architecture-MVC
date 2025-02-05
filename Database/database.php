@@ -1,12 +1,12 @@
 <?php
-namespace Database;
+namespace App\Database;
 use PDO;
 use PDOException;
 class Database {
     private static $host = "localhost";
     private static $db_name = "MVC";
     private static $username = "postgres";
-    private static $password = "";
+    private static $password = "1234";
     private static $port = 5432;
     private static $conn = null;
 
