@@ -1,15 +1,14 @@
 {
-    "name": "youcode/m.v.c",
+    "name": "youcode/d-veloppement-d-une-architecture-mvc",
     "autoload": {
         "psr-4": {
-            "Youcode\\MVC\\": "src/",
-            "database\\": "database/database.php"
+            "Youcode\\DVeloppementDUneArchitectureMvc\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "Oussama Errahili",
-            "email": "oussamaerrahili124@gmail.com"
+            "name": "harit",
+            "email": "harit@gmail.com"
         }
     ],
     "require": {}
