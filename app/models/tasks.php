@@ -1,6 +1,11 @@
 <?php
+namespace App\Models;
 
-class Task {
+
+include $_SERVER['DOCUMENT_ROOT'].'../vendor/autoload.php';
+
+
+class Tasks {
     private $conn;
     private $table_name = 'tasks';
 

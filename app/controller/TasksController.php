@@ -3,6 +3,7 @@
 include $_SERVER['DOCUMENT_ROOT'].'../vendor/autoload.php';
 
 use Database\Database;
+use App\Models\Tasks;
 
 class TaskController {
 
@@ -10,8 +11,10 @@ class TaskController {
     private $task;
 
     public function __construct() {
+
+        
         $this->db = new Database();
-        $this->task = new Task($this->db->getConnection());
+        $this->task = new Tasks($this->db->getConnection());
     }
 
     public function createTask($user_id, $title, $description, $status) {
@@ -19,8 +22,8 @@ class TaskController {
         $this->task->title = $title;
         $this->task->description = $description;
         $this->task->status = $status;
-        $this->task->created_at = date('Y-m-d H:i:s');
-        $this->task->updated_at = date('Y-m-d H:i:s');
+        // $this->task->created_at = date('Y-m-d H:i:s');
+        // $this->task->updated_at = date('Y-m-d H:i:s');
 
         if ($this->task->create()) {
             echo "Task created successfully!";
@@ -34,7 +37,7 @@ class TaskController {
         $this->task->title = $title;
         $this->task->description = $description;
         $this->task->status = $status;
-        $this->task->updated_at = date('Y-m-d H:i:s');
+        // $this->task->updated_at = date('Y-m-d H:i:s');
 
         if ($this->task->update()) {
             echo "Task updated successfully!";
@@ -47,6 +50,6 @@ class TaskController {
         $this->task->user_id = $user_id;
         $tasks = $this->task->read();
 
-        include 'views/task_list.php';
+        // include 'views/task_list.php';
     }
 }
